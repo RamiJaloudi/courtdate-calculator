@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: #f6f7f9;
+  color: #1f2937;
+}
+
+.shell {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+.panel {
+  background: white;
+  border: 1px solid #d5dae1;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-weight: 700;
+}
+
+input,
+select {
+  min-height: 42px;
+  border: 1px solid #aab2bf;
+  border-radius: 6px;
+  padding: 0 12px;
+  font: inherit;
+}
+
+.results {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.deadline {
+  display: grid;
+  grid-template-columns: 160px 1fr 140px;
+  gap: 16px;
+  align-items: center;
+  background: white;
+  border: 1px solid #d5dae1;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.deadline span {
+  color: #526070;
+  font-size: 13px;
+}
+
+.deadline time {
+  justify-self: end;
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .deadline {
+    grid-template-columns: 1fr;
+  }
+
+  .deadline time {
+    justify-self: start;
+  }
+}
